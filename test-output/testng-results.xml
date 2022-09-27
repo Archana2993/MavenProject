@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="4" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-27T16:05:51 IST" name="Suite" finished-at="2022-09-27T16:09:48 IST" duration-ms="236628">
+    <groups>
+    </groups>
+    <test started-at="2022-09-27T16:05:51 IST" name="ChromeTest" finished-at="2022-09-27T16:09:48 IST" duration-ms="236628">
+      <class name="TestPack.ToVerifyFacebookHomePage">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:05:56 IST" name="launchBrowser" finished-at="2022-09-27T16:05:59 IST" duration-ms="2365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:03 IST" name="createPOMObjects" finished-at="2022-09-27T16:06:04 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="verifyHomePage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:04 IST" name="verifyHomePage" finished-at="2022-09-27T16:06:12 IST" duration-ms="8264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method signature="toVerifyLogInPage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:12 IST" name="toVerifyLogInPage" finished-at="2022-09-27T16:06:23 IST" duration-ms="10238" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The password that you've entered is incorrect. Forgotten password? expected [(2) Facebook] but found [Log in to Facebook]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The password that you've entered is incorrect. Forgotten password? expected [(2) Facebook] but found [Log in to Facebook]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at TestPack.ToVerifyFacebookHomePage.toVerifyLogInPage(ToVerifyFacebookHomePage.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toVerifyLogInPage -->
+        <test-method is-config="true" signature="logOutFromaaplication(org.testng.ITestResult)[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:23 IST" name="logOutFromaaplication" finished-at="2022-09-27T16:06:23 IST" duration-ms="697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=toVerifyLogInPage status=FAILURE method=ToVerifyFacebookHomePage.toVerifyLogInPage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromaaplication -->
+        <test-method is-config="true" signature="verifyHomePage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:23 IST" name="verifyHomePage" finished-at="2022-09-27T16:06:27 IST" duration-ms="3768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+        <test-method signature="toVerifySignUpPage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:27 IST" name="toVerifySignUpPage" finished-at="2022-09-27T16:06:32 IST" duration-ms="5442" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook] but found [Sign up for Facebook | Facebook]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook] but found [Sign up for Facebook | Facebook]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestPack.ToVerifyFacebookHomePage.toVerifySignUpPage(ToVerifyFacebookHomePage.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toVerifySignUpPage -->
+        <test-method is-config="true" signature="logOutFromaaplication(org.testng.ITestResult)[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:32 IST" name="logOutFromaaplication" finished-at="2022-09-27T16:06:33 IST" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=toVerifySignUpPage status=FAILURE method=ToVerifyFacebookHomePage.toVerifySignUpPage()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromaaplication -->
+        <test-method is-config="true" signature="cleanPOMObjects()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:06:33 IST" name="cleanPOMObjects" finished-at="2022-09-27T16:06:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPOMObjects -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TestPack.ToVerifyFacebookHomePage@6b81ce95]" started-at="2022-09-27T16:09:46 IST" name="closedBrowser" finished-at="2022-09-27T16:09:47 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TestPack.ToVerifyFacebookHomePage -->
+      <class name="TempTestNg2.ToVerifyProductPage">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:05:59 IST" name="launchBrowser" finished-at="2022-09-27T16:06:03 IST" duration-ms="4529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:07:29 IST" name="createPOMObjects" finished-at="2022-09-27T16:07:29 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="searchProduct()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:07:29 IST" name="searchProduct" finished-at="2022-09-27T16:07:58 IST" duration-ms="28746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="verifyaddToCart()[pri:1, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:07:58 IST" name="verifyaddToCart" finished-at="2022-09-27T16:08:19 IST" duration-ms="21375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyaddToCart -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:08:19 IST" name="screenshot" finished-at="2022-09-27T16:08:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyaddToCart status=SUCCESS method=ToVerifyProductPage.verifyaddToCart()[pri:1, instance:TempTestNg2.ToVerifyProductPage@6572421] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="searchProduct()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:08:19 IST" name="searchProduct" finished-at="2022-09-27T16:08:45 IST" duration-ms="25859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="verifyBuyNowButton()[pri:2, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:08:45 IST" name="verifyBuyNowButton" finished-at="2022-09-27T16:09:03 IST" duration-ms="17401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBuyNowButton -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:03 IST" name="screenshot" finished-at="2022-09-27T16:09:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBuyNowButton status=SUCCESS method=ToVerifyProductPage.verifyBuyNowButton()[pri:2, instance:TempTestNg2.ToVerifyProductPage@6572421] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="searchProduct()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:03 IST" name="searchProduct" finished-at="2022-09-27T16:09:26 IST" duration-ms="23632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="verifyAddtoWishListButton()[pri:3, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:26 IST" name="verifyAddtoWishListButton" finished-at="2022-09-27T16:09:43 IST" duration-ms="16978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddtoWishListButton -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:43 IST" name="screenshot" finished-at="2022-09-27T16:09:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddtoWishListButton status=SUCCESS method=ToVerifyProductPage.verifyAddtoWishListButton()[pri:3, instance:TempTestNg2.ToVerifyProductPage@6572421] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="cleanPOMObjects()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:43 IST" name="cleanPOMObjects" finished-at="2022-09-27T16:09:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPOMObjects -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TempTestNg2.ToVerifyProductPage@6572421]" started-at="2022-09-27T16:09:47 IST" name="closedBrowser" finished-at="2022-09-27T16:09:48 IST" duration-ms="1267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TempTestNg2.ToVerifyProductPage -->
+      <class name="TempTestNg2.ToVerifyAllTab">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:05:51 IST" name="launchBrowser" finished-at="2022-09-27T16:05:56 IST" duration-ms="5066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:06:33 IST" name="createPOMObjects" finished-at="2022-09-27T16:06:33 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="toVerifyAllbutton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:06:33 IST" name="toVerifyAllbutton" finished-at="2022-09-27T16:07:08 IST" duration-ms="34802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toVerifyAllbutton -->
+        <test-method signature="verifyHandbagsButton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:08 IST" name="verifyHandbagsButton" finished-at="2022-09-27T16:07:10 IST" duration-ms="2067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHandbagsButton -->
+        <test-method is-config="true" signature="sscrenshot(org.testng.ITestResult)[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:10 IST" name="sscrenshot" finished-at="2022-09-27T16:07:10 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHandbagsButton status=SUCCESS method=ToVerifyAllTab.verifyHandbagsButton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sscrenshot -->
+        <test-method is-config="true" signature="toVerifyAllbutton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:10 IST" name="toVerifyAllbutton" finished-at="2022-09-27T16:07:23 IST" duration-ms="13544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toVerifyAllbutton -->
+        <test-method signature="verifySandalsButton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:23 IST" name="verifySandalsButton" finished-at="2022-09-27T16:07:27 IST" duration-ms="3852" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Fashion Sandals']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ARCHANA', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Samir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd02e2f11e38eb2940b5b8c4e0534edd
+*** Element info: {Using=xpath, value=//a[text()='Fashion Sandals']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Fashion Sandals']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ARCHANA', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Samir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd02e2f11e38eb2940b5b8c4e0534edd
+*** Element info: {Using=xpath, value=//a[text()='Fashion Sandals']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at AmazonePages.WomensFashionCat.openSandalsPage(WomensFashionCat.java:37)
+at TempTestNg2.ToVerifyAllTab.verifySandalsButton(ToVerifyAllTab.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySandalsButton -->
+        <test-method is-config="true" signature="sscrenshot(org.testng.ITestResult)[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:27 IST" name="sscrenshot" finished-at="2022-09-27T16:07:29 IST" duration-ms="1912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySandalsButton status=FAILURE method=ToVerifyAllTab.verifySandalsButton()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sscrenshot -->
+        <test-method is-config="true" signature="cleanPOMObjects()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:07:29 IST" name="cleanPOMObjects" finished-at="2022-09-27T16:07:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanPOMObjects -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TempTestNg2.ToVerifyAllTab@294425a7]" started-at="2022-09-27T16:09:43 IST" name="closedBrowser" finished-at="2022-09-27T16:09:46 IST" duration-ms="2866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TempTestNg2.ToVerifyAllTab -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

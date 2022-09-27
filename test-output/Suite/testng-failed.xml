@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TempTestNg2.ToVerifyAllTab">
+        <methods>
+          <include name="closedBrowser"/>
+          <include name="verifySandalsButton"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="sscrenshot"/>
+          <include name="cleanPOMObjects"/>
+          <include name="toVerifyAllbutton"/>
+        </methods>
+      </class> <!-- TempTestNg2.ToVerifyAllTab -->
+      <class name="TestPack.ToVerifyFacebookHomePage">
+        <methods>
+          <include name="toVerifyLogInPage"/>
+          <include name="cleanPOMObjects"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="logOutFromaaplication"/>
+          <include name="verifyHomePage"/>
+          <include name="toVerifySignUpPage"/>
+          <include name="closedBrowser"/>
+        </methods>
+      </class> <!-- TestPack.ToVerifyFacebookHomePage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="FirefoxTest(failed)(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TempTestNg2.ToVerifyProductPage">
+        <methods>
+          <include name="verifyBuyNowButton"/>
+          <include name="cleanPOMObjects"/>
+          <include name="closedBrowser"/>
+          <include name="searchProduct"/>
+          <include name="verifyAddtoWishListButton"/>
+          <include name="verifyaddToCart"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- TempTestNg2.ToVerifyProductPage -->
+      <class name="TempTestNg2.ToVerifyAllTab">
+        <methods>
+          <include name="closedBrowser"/>
+          <include name="verifySandalsButton"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyHandbagsButton"/>
+          <include name="cleanPOMObjects"/>
+          <include name="toVerifyAllbutton"/>
+        </methods>
+      </class> <!-- TempTestNg2.ToVerifyAllTab -->
+    </classes>
+  </test> <!-- FirefoxTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
