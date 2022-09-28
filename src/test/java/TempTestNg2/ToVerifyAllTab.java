@@ -15,6 +15,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import AmazonePages.AllTab;
 import AmazonePages.WomensFashionCat;
 import Setup.Base;
@@ -27,10 +31,16 @@ public class ToVerifyAllTab extends Base
 	private WomensFashionCat womensFashionCat;
 	private SoftAssert soft;
 	private int testId=0;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
+	
 	@Parameters ("browser")
 	@BeforeTest
 	public void launchBrowser(String browserName)
 	{
+		reporter =new ExtentHtmlReporter ("test-output\\ExtendReport\\Extent.html");
+		ExtentReports extend =new ExtentReports();
+		extend.attachReporter(reporter);
 		if(browserName.equals("Chrome"))
 		{
 	    	driver=openChromeBrowser();

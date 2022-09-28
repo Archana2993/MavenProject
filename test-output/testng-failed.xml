@@ -4,17 +4,6 @@
   <test thread-count="3" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="TempTestNg2.ToVerifyAllTab">
-        <methods>
-          <include name="closedBrowser"/>
-          <include name="verifySandalsButton"/>
-          <include name="launchBrowser"/>
-          <include name="createPOMObjects"/>
-          <include name="sscrenshot"/>
-          <include name="cleanPOMObjects"/>
-          <include name="toVerifyAllbutton"/>
-        </methods>
-      </class> <!-- TempTestNg2.ToVerifyAllTab -->
       <class name="TestPack.ToVerifyFacebookHomePage">
         <methods>
           <include name="toVerifyLogInPage"/>
@@ -27,6 +16,17 @@
           <include name="closedBrowser"/>
         </methods>
       </class> <!-- TestPack.ToVerifyFacebookHomePage -->
+      <class name="TempTestNg2.ToVerifyAllTab">
+        <methods>
+          <include name="closedBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyHandbagsButton"/>
+          <include name="sscrenshot"/>
+          <include name="cleanPOMObjects"/>
+          <include name="toVerifyAllbutton"/>
+        </methods>
+      </class> <!-- TempTestNg2.ToVerifyAllTab -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
