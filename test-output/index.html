@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,  2 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -112,12 +112,26 @@
                         <a href="#" panel-name="suite-Suite" title="TestPack.ToVerifyFacebookHomePage" class="method navigator-link" hash-for-method="toVerifySignUpPage">toVerifySignUpPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TempTestNg2.ToVerifyAllTab" class="method navigator-link" hash-for-method="verifyHandbagsButton">verifyHandbagsButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TempTestNg2.ToVerifyAllTab" class="method navigator-link" hash-for-method="verifySandalsButton">verifySandalsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -134,11 +148,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TempTestNg2.ToVerifyProductPage" class="method navigator-link" hash-for-method="verifyBuyNowButton">verifyBuyNowButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TempTestNg2.ToVerifyAllTab" class="method navigator-link" hash-for-method="verifySandalsButton">verifySandalsButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -169,7 +178,7 @@
                   <a name="toVerifyLogInPage">
                   </a> <!-- toVerifyLogInPage -->
                   <span class="method-name">toVerifyLogInPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: The password that you&apos;ve entered is incorrect. Forgotten password? expected [(2) Facebook] but found []
+                  <div class="stack-trace">java.lang.AssertionError: The password that you&apos;ve entered is incorrect. Forgotten password? expected [(2) Facebook] but found [Log in to Facebook]
 	at TestPack.ToVerifyFacebookHomePage.toVerifyLogInPage(ToVerifyFacebookHomePage.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -198,9 +207,9 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">TempTestNg2.ToVerifyAllTab</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -209,15 +218,25 @@
                   <a name="verifyHandbagsButton">
                   </a> <!-- verifyHandbagsButton -->
                   <span class="method-name">verifyHandbagsButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Handbags &amp; Clutches&apos;)]&quot;}
-  (Session info: chrome=105.0.5195.127)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@data-menu-id=&apos;11&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at AmazonePages.AllTab.openWomensFashion(AllTab.java:32)
+	at TempTestNg2.ToVerifyAllTab.toVerifyAllbutton(ToVerifyAllTab.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-menu-id=&apos;11&apos;]&quot;}
+  (Session info: chrome=106.0.5249.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ARCHANA&apos;, ip: &apos;192.168.1.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Samir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ddd48decb4cb3aefcdbdef4b5ce2274e
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Handbags &amp; Clutches&apos;)]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Samir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3a1b17b65e4fc26281b03e8f6f1887d
+*** Element info: {Using=xpath, value=//a[@data-menu-id=&apos;11&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -230,44 +249,66 @@ Session ID: ddd48decb4cb3aefcdbdef4b5ce2274e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at AmazonePages.WomensFashionCat.openHandbagsPage(WomensFashionCat.java:29)
-	at TempTestNg2.ToVerifyAllTab.verifyHandbagsButton(ToVerifyAllTab.java:77)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TempTestNg2.ToVerifyAllTab</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifySandalsButton">
                   </a> <!-- verifySandalsButton -->
                   <span class="method-name">verifySandalsButton</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@data-menu-id=&apos;11&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at AmazonePages.AllTab.openWomensFashion(AllTab.java:32)
+	at TempTestNg2.ToVerifyAllTab.toVerifyAllbutton(ToVerifyAllTab.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-menu-id=&apos;11&apos;]&quot;}
+  (Session info: chrome=106.0.5249.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ARCHANA&apos;, ip: &apos;192.168.1.28&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Samir\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c3a1b17b65e4fc26281b03e8f6f1887d
+*** Element info: {Using=xpath, value=//a[@data-menu-id=&apos;11&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -307,6 +348,9 @@ Session ID: ddd48decb4cb3aefcdbdef4b5ce2274e
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extendReport.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
@@ -354,38 +398,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyaddToCart')
+data.setCell(0, 1, 'verifyBuyNowButton')
 data.setCell(0, 2, 'TempTestNg2.ToVerifyProductPage')
-data.setCell(0, 3, 31543);
+data.setCell(0, 3, 29306);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyBuyNowButton')
+data.setCell(1, 1, 'verifyAddtoWishListButton')
 data.setCell(1, 2, 'TempTestNg2.ToVerifyProductPage')
-data.setCell(1, 3, 31455);
+data.setCell(1, 3, 26566);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAddtoWishListButton')
+data.setCell(2, 1, 'verifyaddToCart')
 data.setCell(2, 2, 'TempTestNg2.ToVerifyProductPage')
-data.setCell(2, 3, 26581);
+data.setCell(2, 3, 24800);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'toVerifyLogInPage')
 data.setCell(3, 2, 'TestPack.ToVerifyFacebookHomePage')
-data.setCell(3, 3, 17857);
+data.setCell(3, 3, 18506);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySandalsButton')
-data.setCell(4, 2, 'TempTestNg2.ToVerifyAllTab')
-data.setCell(4, 3, 17405);
+data.setCell(4, 1, 'toVerifySignUpPage')
+data.setCell(4, 2, 'TestPack.ToVerifyFacebookHomePage')
+data.setCell(4, 3, 8886);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHandbagsButton')
+data.setCell(5, 1, 'verifySandalsButton')
 data.setCell(5, 2, 'TempTestNg2.ToVerifyAllTab')
-data.setCell(5, 3, 13331);
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'toVerifySignUpPage')
-data.setCell(6, 2, 'TestPack.ToVerifyFacebookHomePage')
-data.setCell(6, 3, 12813);
+data.setCell(6, 1, 'verifyHandbagsButton')
+data.setCell(6, 2, 'TempTestNg2.ToVerifyAllTab')
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -421,158 +465,158 @@ return data;
               <div class="chronological-class-name">TestPack.ToVerifyFacebookHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">19814 ms</span>
+                <span class="method-start">31189 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TempTestNg2.ToVerifyProductPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Chrome)</span>
-                <span class="method-start">23713 ms</span>
+                <span class="method-start">34440 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPack.ToVerifyFacebookHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">29924 ms</span>
+                <span class="method-start">41696 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">verifyHomePage</span>
-                <span class="method-start">30537 ms</span>
+                <span class="method-start">42585 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">toVerifyLogInPage</span>
-                <span class="method-start">38949 ms</span>
+                <span class="method-start">56816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOutFromaaplication([TestResult name=toVerifyLogInPage status=FAILURE method=ToVerifyFacebookHomePage.toVerifyLogInPage(...)</span>
-                <span class="method-start">56819 ms</span>
+                <span class="method-start">75332 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">verifyHomePage</span>
-                <span class="method-start">57891 ms</span>
+                <span class="method-start">75880 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">toVerifySignUpPage</span>
-                <span class="method-start">61899 ms</span>
+                <span class="method-start">78114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logOutFromaaplication([TestResult name=toVerifySignUpPage status=FAILURE method=ToVerifyFacebookHomePage.toVerifySignUpPag...)</span>
-                <span class="method-start">74718 ms</span>
+                <span class="method-start">87015 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanPOMObjects</span>
-                <span class="method-start">75151 ms</span>
+                <span class="method-start">87305 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TempTestNg2.ToVerifyAllTab</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">75153 ms</span>
+                <span class="method-start">87306 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">toVerifyAllbutton</span>
-                <span class="method-start">75406 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">toVerifyAllbutton</span>
+                <span class="method-start">87524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <span class="method-name">verifyHandbagsButton</span>
-                <span class="method-start">103485 ms</span>
+                <span class="method-start">182364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">sscrenshot([TestResult name=verifyHandbagsButton status=FAILURE method=ToVerifyAllTab.verifyHandbagsButton()[pr...)</span>
-                <span class="method-start">116823 ms</span>
+                <span class="method-name">sscrenshot</span>
+                <span class="method-start">182376 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">toVerifyAllbutton</span>
-                <span class="method-start">118637 ms</span>
+                <span class="method-start">182380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySandalsButton</span>
-                <span class="method-start">142982 ms</span>
+                <span class="method-start">182383 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">sscrenshot([TestResult name=verifySandalsButton status=SUCCESS method=ToVerifyAllTab.verifySandalsButton()[pri:...)</span>
-                <span class="method-start">160402 ms</span>
+                <span class="method-name">sscrenshot</span>
+                <span class="method-start">182397 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanPOMObjects</span>
-                <span class="method-start">160403 ms</span>
+                <span class="method-start">182403 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TempTestNg2.ToVerifyProductPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createPOMObjects</span>
-                <span class="method-start">160406 ms</span>
+                <span class="method-start">182407 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">searchProduct</span>
-                <span class="method-start">160679 ms</span>
+                <span class="method-start">182705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyaddToCart</span>
-                <span class="method-start">246387 ms</span>
+                <span class="method-start">280491 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshot([TestResult name=verifyaddToCart status=SUCCESS method=ToVerifyProductPage.verifyaddToCart()[pri:1, ...)</span>
-                <span class="method-start">277933 ms</span>
+                <span class="method-start">305295 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">searchProduct</span>
-                <span class="method-start">277936 ms</span>
+                <span class="method-start">305297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBuyNowButton</span>
-                <span class="method-start">313613 ms</span>
+                <span class="method-start">331298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshot([TestResult name=verifyBuyNowButton status=SUCCESS method=ToVerifyProductPage.verifyBuyNowButton()[p...)</span>
-                <span class="method-start">345070 ms</span>
+                <span class="method-start">360607 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">searchProduct</span>
-                <span class="method-start">345074 ms</span>
+                <span class="method-start">360609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddtoWishListButton</span>
-                <span class="method-start">380471 ms</span>
+                <span class="method-start">389126 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshot([TestResult name=verifyAddtoWishListButton status=SUCCESS method=ToVerifyProductPage.verifyAddtoWish...)</span>
-                <span class="method-start">407055 ms</span>
+                <span class="method-start">415695 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanPOMObjects</span>
-                <span class="method-start">407056 ms</span>
+                <span class="method-start">415697 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TempTestNg2.ToVerifyAllTab</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">407057 ms</span>
+                <span class="method-start">415698 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPack.ToVerifyFacebookHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">409055 ms</span>
+                <span class="method-start">415701 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TempTestNg2.ToVerifyProductPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closedBrowser</span>
-                <span class="method-start">416918 ms</span>
+                <span class="method-start">415703 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
