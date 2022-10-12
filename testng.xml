@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" thread-count="3" parallel="tests">
+<suite name="Suite" >
 <listeners>
 <listener class-name="extendReport.ExtentTestNGIReporterListener"></listener>
 </listeners>
-  <test  name="ChromeTest">
+  <test  name="ChromeTest" thread-count="3" parallel="classes">
   <parameter name="browser" value="Chrome"/>
+    <classes>  
+       <class name="TempTestNg2.ToVerifyAllTab"/>
+       <class name="TempTestNg2.ToVerifyProductPage"/>
+       <class name="TestPack.ToVerifyFacebookHomePage"/>
+    </classes>
+  </test> <!-- Test -->
+   <test  name="FirefoxTest" thread-count="3" parallel="classes">
+  <parameter name="browser" value="Firefox"/>
     <classes>  
        <class name="TempTestNg2.ToVerifyAllTab"/>
        <class name="TempTestNg2.ToVerifyProductPage"/>

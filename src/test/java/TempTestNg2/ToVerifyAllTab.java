@@ -51,7 +51,6 @@ public class ToVerifyAllTab extends Base
 			
 		}
 		
-		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
