@@ -10,6 +10,7 @@
        <class name="TempTestNg2.ToVerifyAllTab"/>
        <class name="TempTestNg2.ToVerifyProductPage"/>
        <class name="TestPack.ToVerifyFacebookHomePage"/>
+       <class name="TempTestNg2.ToVerifyInstaLogInPageWithInvalidCreditioal"/>
     </classes>
   </test> <!-- Test -->
    <test  name="FirefoxTest" thread-count="3" parallel="classes">
@@ -18,6 +19,7 @@
        <class name="TempTestNg2.ToVerifyAllTab"/>
        <class name="TempTestNg2.ToVerifyProductPage"/>
        <class name="TestPack.ToVerifyFacebookHomePage"/>
+       <class name="TempTestNg2.ToVerifyInstaLogInPageWithInvalidCreditioal"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

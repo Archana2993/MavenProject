@@ -7,6 +7,17 @@
   <test thread-count="5" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="TempTestNg2.ToVerifyProductPage">
+        <methods>
+          <include name="screenshot"/>
+          <include name="cleanPOMObjects"/>
+          <include name="closedBrowser"/>
+          <include name="searchProduct"/>
+          <include name="verifyaddToCart"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- TempTestNg2.ToVerifyProductPage -->
       <class name="TestPack.ToVerifyFacebookHomePage">
         <methods>
           <include name="toVerifyLogInPage"/>

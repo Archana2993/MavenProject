@@ -33,10 +33,10 @@ public class InstaLogInPage {
 		}
 		
 
-		public void clicklogInButton()
+		public void clicklogInButton(String mail,String passw)
 		{
-			userName.sendKeys("archanashejul2@gmail.com");
-			password.sendKeys("arch@2993");                                      
+			userName.sendKeys(mail);
+			password.sendKeys(passw);                                      
 			WebDriverWait wait=new WebDriverWait(driver,10);
 			wait.until(ExpectedConditions.visibilityOf(logInButton));
 			logInButton.click();
